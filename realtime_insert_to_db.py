@@ -8,7 +8,6 @@ import time
 from mysql.connector import Error
 import mysql.connector
 import pandas as pd
-import numpy as np
 
 host_name = "localhost"
 user_name = "root"
