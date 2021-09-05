@@ -8,6 +8,7 @@ import time
 from mysql.connector import Error
 import mysql.connector
 import pandas as pd
+import numpy as np
 
 host_name = "localhost"
 user_name = "root"
@@ -34,7 +35,7 @@ sql = "INSERT INTO eeg_data(`Fp1`,`F7`,`F3`,`T3`,`C3`,`T5`,`P3`,`O1`,`Fp2`,`F8`,
 for t in range(time_to_continue):
     for i in range(sample_rate):
         mycursor = mydb.cursor()
-        val_list = data[l]
+        val_list = data.iloc[l]
         val = tuple(val_list)
         mycursor.execute(sql, val)
         mydb.commit()
