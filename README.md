@@ -1,5 +1,6 @@
 # Real_time_ML
 ![img](https://github.com/Sepideh-Adamiat/Real_time_ML/blob/main/images/Diagram.png)
+
 This is a code for managing real-time data and processing them with some machine learning algorithms.
 This project is developed to connect to a sensor that generates data in each second. Before accessing the device I simulate this event with realtime_insert_to_db.py. This code reads records from an already existing CSV file which is gathered from a previous experiment and inserts a fixed number of them (sample rate = 256) into the database in each second.
 
